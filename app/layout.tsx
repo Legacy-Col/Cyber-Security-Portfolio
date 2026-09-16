@@ -19,7 +19,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kaizen — Security Analyst Portfolio",
+  title: "Collins — Security Analyst Portfolio",
   description:
     "SOC, CTI, cloud detection, and pentest project writeups from an aspiring SOC analyst building toward threat hunting.",
 };
