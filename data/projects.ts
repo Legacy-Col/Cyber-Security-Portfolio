@@ -43,13 +43,27 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // your first real project goes here — see below
+  {
+   slug: "short-url-safe-id",       
+   title: "Malware Analysis",
+   category: "SOC",                 
+   status: "Complete",              
+   date: "2026-06",                 
+   summary: "This Project made me understand how to read and analyse malware.",
+   stack: ["Powershell", "YARA", "Virustotal", "Malware Bazzar"],     
+   objective: "What you set out to .",
+   methodology: "I downloaded the malware from Malware Bazzar and then wrote a Yara rule to analyse it",
+   findings: "I .",
+   retro: "What you'd do differently next time.",
+   links: [{ label: "GitHub repo", url: "https://github.com/Legacy-Col/soc-analyst-journey/tree/collins/Malware%20Analysis" }],
+ },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
 }
 
-export function getProjectsSorted(): Project[] {
+export function getProjectsSorted(): Project[]
+{
   return [...projects].sort((a, b) => (a.date < b.date ? 1 : -1));
 }
